@@ -1,0 +1,30 @@
+#burger {
+  cursor: pointer;
+  display: block;
+}
+
+#burger span {
+  background: #0062cc;
+  display: block;
+  width: 60px;
+  height: 6px;
+  margin-bottom: 10px;
+  position: relative;
+  top: 0;
+  transition: all ease-in-out 0.4s;
+}
+
+#burger-container.open span:nth-child(2) {
+  width: 0;
+  opacity: 0;
+}
+
+#burger-container.open span:nth-child(3) {
+  transform: rotate(35deg);
+  top: -16px;
+}
+
+#burger-container.open span:nth-child(1) {
+  transform: rotate(-35deg);
+  top: 16px;
+}

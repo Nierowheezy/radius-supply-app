@@ -1,0 +1,73 @@
+body {
+  position: relative;
+}
+
+#validation-output {
+  position: absolute;
+  top: 2945px;
+  left: 512px;
+  font-family: sans-serif;
+  width: 300px;
+  height: 50px;
+  padding: 5px 10px 25px 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(11, 100, 72);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  opacity: 0;
+  display: none;
+}
+
+#validation-output.show {
+  opacity: 1;
+  display: block;
+}
+
+/* error code */
+
+#error {
+  position: absolute;
+  top: 2960px;
+  left: 512px;
+  font-family: sans-serif;
+  width: 300px;
+  height: 80px;
+  padding: 5px 10px 25px 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(172, 0, 0);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  opacity: 0;
+  display: none;
+}
+
+#error.display {
+  opacity: 1;
+  display: block;
+}
+
+/* duplicate code */
+
+#duplicate-error {
+  position: absolute;
+  top: 2960px;
+  left: 512px;
+  font-family: sans-serif;
+  width: 300px;
+  height: 50px;
+  padding: 5px 10px 25px 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(172, 0, 0);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  opacity: 0;
+  display: none;
+}
+
+#duplicate-error.duplicate {
+  opacity: 1;
+  display: block;
+}
